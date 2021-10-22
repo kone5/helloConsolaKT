@@ -203,3 +203,211 @@ fun colacion() {
 
 colacion()
 Hoy es el dia 5 y la colacion que se come es peras
+
+# segunda clase
+"C:\Program Files\Android\Android Studio\jre\bin\java.exe" -Dkotlin.repl.ideMode=true -Dfile.encoding=UTF-8 @C:\Users\Kone\AppData\Local\Temp\idea_arg_file1502567590
+
+There were compilation errors in module hello_consolaKT
+
+Welcome to Kotlin version 1.5.31-release-550 (JRE 11.0.10+0-b96-7249189)
+Type :help for help, :quit for quit
+
+val verdadero = true
+
+val falso = false
+
+println(verdadero)
+true
+
+println(falso)
+false
+
+println(!verdadero)
+false
+
+println(!falso)
+true
+
+println(verdadero && falso)
+false
+
+println(falso || verdadero)
+true
+
+val x = null
+
+val y : x.toDouble()
+incomplete code
+
+val y : ?x.toDouble()
+incomplete code
+
+val y = x.toDouble() : ?0.0
+incomplete code
+
+val y = ?x.toDouble() : ?0.0
+error: expecting an expression
+val y = ?x.toDouble() : ?0.0
+       ^
+error: property getter or setter expected
+val y = ?x.toDouble() : ?0.0
+        ^
+
+val y = x?.toDouble() : ?0.0
+incomplete code
+
+val numDePeces = 50
+
+val numDePlantas = 23
+
+println(numDePeces)
+50
+
+println(numDePlantas)
+23
+
+if(numDePeces > numDePlantas){
+     println("Acuario sano...")
+ }else{
+     println("Acuario insalubre")
+ }
+Acuario sano...
+
+val numDePlantas = 70
+
+println(numDePlantas)
+70
+
+if(numDePeces > numDePlantas){
+     println("Acuario sano...")
+ }else{
+     println("Acuario insalubre")
+ }
+Acuario insalubre
+
+val numDePeces = 50
+
+if(numDePeces == 0){
+     println("Acuario vacio...!!!")
+ }else if(numDePeces < 40){
+     println("Acuario con peces...")
+ }else{
+     println("Acuario con exceso de peces...")
+ }
+Acuario con exceso de peces...
+
+val numDePeces = 35
+
+if(numDePeces == 0){
+     println("Acuario vacio...!!!")
+ }else if(numDePeces < 40){
+     println("Acuario con peces...")
+ }else{
+     println("Acuario con exceso de peces...")
+ }
+Acuario con peces...
+
+when (numDePeces){
+     0 -> println("Acuario vacio...!")
+     in 1..39 -> println("Acuario con peces...")
+     else -> println("Acuario con exceso de peces...")
+ }
+Acuario con peces...
+
+val numDePeces = 0
+
+when (numDePeces){
+     0 -> println("Acuario vacio...!")
+     in 1..39 -> println("Acuario con peces...")
+     else -> println("Acuario con exceso de peces...")
+ }
+Acuario vacio...!
+
+val numDePeces = 17
+
+when (numDePeces){
+     0 -> println("Acuario vacio...!")
+     in 1..39 -> println("Acuario con peces...")
+     else -> println("Acuario con exceso de peces...")
+ }
+Acuario con peces...
+
+val numDePeces = 50
+
+when (numDePeces){
+     0 -> println("Acuario vacio...!")
+     in 1..39 -> println("Acuario con peces...")
+     else -> println("Acuario con exceso de peces...")
+ }
+Acuario con exceso de peces...
+
+val curso : List<String> = listof("Ana","Jose","Ivan","Elisa")
+error: unresolved reference: listof
+val curso : List<String> = listof("Ana","Jose","Ivan","Elisa")
+                           ^
+
+val curso : List<String> = list0f("Ana","Jose","Ivan","Elisa")
+error: unresolved reference: list0f
+val curso : List<String> = list0f("Ana","Jose","Ivan","Elisa")
+                           ^
+
+val curso : List<String> = listOf("Ana","Jose","Ivan","Elisa")
+
+println(curso)
+[Ana, Jose, Ivan, Elisa]
+
+curso.size
+res37: kotlin.Int = 4
+
+curso.first()
+res38: kotlin.String = Ana
+
+curso.last()
+res39: kotlin.String = Elisa
+
+var clase : mutableList<String> = mutableListOf("Eduardo","Pedro","Rita","Tomas","Elisa","Sergio")
+error: unresolved reference: mutableList
+var clase : mutableList<String> = mutableListOf("Eduardo","Pedro","Rita","Tomas","Elisa","Sergio")
+            ^
+
+var clase = mutableListOf("Eduardo","Pedro","Rita","Tomas","Elisa","Sergio")
+
+println(clase)
+[Eduardo, Pedro, Rita, Tomas, Elisa, Sergio]
+
+clase.size
+res43: kotlin.Int = 6
+
+clase.last
+error: function invocation 'last()' expected
+clase.last
+      ^
+
+clase.last()
+res45: kotlin.String = Sergio
+
+clase.first()
+res46: kotlin.String = Eduardo
+
+clase.remove(Elisa)
+error: unresolved reference: Elisa
+clase.remove(Elisa)
+             ^
+
+clase.remove("Elisa")
+res48: kotlin.Boolean = true
+
+println(clase)
+[Eduardo, Pedro, Rita, Tomas, Sergio]
+
+clase.add("Javier")
+res50: kotlin.Boolean = true
+
+clase.add("Killer")
+res51: kotlin.Boolean = true
+
+println(clase)
+[Eduardo, Pedro, Rita, Tomas, Sergio, Javier, Killer]
+
+clase.last()
+res53: kotlin.String = Killer
